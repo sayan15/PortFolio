@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg shadow m-1">
+            <div class="class text-center">
+                <h2>About Me</h2>
+                <img src="assets/profile.jpg" alt="profile" width="256" height="256" class="rounded-circle">
+                <p>
+                    Eager to excel in a dynamic software engineering environment, I am a driven professional with a MSc in Computing and substantial experience as an RPA Software Engineer. Skilled in automating processes,I have a strong track record indeveloping and implementing efficient automation solutions. My expertise in diverse programming languages and dedication to continuous learning
+                    and adaptation positions me to effectively contribute to both personal and organizational goals in a software engineering role.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg shadow m-1">
+            <div class="class text-center">
+                <h2>Featured Project</h2>
+                <h4>{{featuredproject.name}}</h4>
+            </div>
+            <carousel>
+                <div *ngFor="let pic of featuredproject.pictures">
+                    <slide>
+                        <img src={{pic}} alt="slide" style="display: block; width: 100%;">
+                    </slide>
+                </div>
+            </carousel>
+            <p class="mt-2">{{featuredproject.summary}}</p>
+            <button class="btn btn-primary" (click)="openProjectModal()">view More</button>
+        </div>
+    </div>
+</div>

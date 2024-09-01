@@ -1,0 +1,148 @@
+<div class="container text-center">
+    <button class="btn btn-primary mb-5 shadow border" (click)="downloadFile()">Download PDF Resume</button>
+    <div class="pb-2">
+        <accordion class="shadow" >
+            <accordion-group [(isOpen)]="isworkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div class="btn-link">Work Experience</div>
+                    <div *ngIf="!isworkExperienceOpen" style="color: white;">></div>
+                    <div *ngIf="isworkExperienceOpen" style="color: white;">v</div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Digital Analyst Programmer</h2>
+                    <h3 class="text-primary">United Utilities</h3>
+                    <ul>
+                        <li>Design and automate processes using Blue Prism and UiPath</li>
+                        <li>Develop applications using Angular</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Engineer - RPA</h2>
+                    <h3 class="text-primary">Wiley Global Technology PVT Ltd</h3>
+                    <ul>
+                        <li>Clarified and analyzed requirements, identifying technology limitations and researching relevant
+                            techniques.</li>
+                        <li>Developed automation processes related to ERPs, AS400, SAP, Salesforce, and Jira, enhancing
+                            process performance.</li>
+                        <li>Conducted code reviews, testing, and provided support for UiPath migration from prime to cloud.
+                        </li>
+                        <li>Prepared Solution Designs (SDD), production release notes, and process handbooks.</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">RPA Engineer</h2>
+                    <h3 class="text-primary">Sampath Information Technology (PVT) Ltd</h3>
+                    <ul>
+                        <li>Designed and developed the Credit Admin CDS Reporting Process using UiPath.</li>
+                        <li>Implemented the Matured Evaluation process for the finance department using BluePrism.</li>
+                        <li>Executed POCs for various finance-related processes and attained Masters Certification in the
+                            A2019 platform.</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Engineer</h2>
+                    <h3 class="text-primary">Potenza (PVT) Ltd</h3>
+                    <ul>
+                        <li>Led the UiPath team and developed an RPA project for the Insurance Renewal Process at LB
+                            Finance.</li>
+                        <li>Conducted research on handwritten data extraction and implemented POCs for process automation at
+                            various banks.</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">RPA Engineer-Associate</h2>
+                    <h3 class="text-primary">Potenza (PVT) Ltd</h3>
+                    <ul>
+                        <li>Designed and developed a live project for AIA Insurance focusing on the Policy Renewal Process
+                            using Automation Anywhere.</li>
+                        <li>Achieved certification as an Automation Anywhere Certified Advanced RPA Professional.</li>
+                        <li>Implemented email automation and conducted POCs for Active Directory user creation.</li>
+                    </ul>
+                </div>
+                <hr>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div class="btn-link">Education</div>
+                    <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                    <div *ngIf="isEducationOpen" style="color: white;">v</div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">MSc in Computing</h2>
+                    <h3 class="text-primary">University of Northampton,UK</h3>
+                    <ul>
+                        <li>Graduated with Distinction</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">B.Sc. in Business Information Systems (Special)</h2>
+                    <h3 class="text-primary">University of Sri Jayewardenepura, Sri Lanka</h3>
+                    <ul>
+                        <li>Specialized in Information Technology, graduated with a Second Class (Lower Division) with a GPA
+                            of 3.38/4.0.</li>
+                    </ul>
+                </div>
+                <hr>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isCertiOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div class="btn-link">Certification</div>
+                    <div *ngIf="!isCertiOpen" style="color: white;">></div>
+                    <div *ngIf="isCertiOpen" style="color: white;">v</div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Certifications</h2>
+                    <ul>
+                        <li><strong>UiPath Certified Advanced RPA Developer (UiARD)</strong> - UiPath (2020)</li>
+                        <li><strong>Automation Anywhere Certified Advanced RPA Professional (A2019)</strong> - Automation
+                            Anywhere (2019)</li>
+                        <li><strong>IBM Business Automation Workflow V19 Developer</strong> - IBM (2021)</li>
+                    </ul>
+                </div>
+                <hr>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isSkillOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div class="btn-link">Skills</div>
+                    <div *ngIf="!isSkillOpen" style="color: white;">></div>
+                    <div *ngIf="isSkillOpen" style="color: white;">v</div>
+                </button>
+                <div class="row" style="text-align: left;">
+                    <div class="col">
+                        <h3>Programming Languages: </h3>
+                        <ul>
+                            <li>C#</li>
+                            <li>TypeScript</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>Kotlin</li>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Frameworks: </h3>
+                        <ul>
+                            <li>Angular</li>
+                            <li>ASP.NET</li>
+                            <li>Node.JS</li>
+                            <li>Laravel</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Other Skills:</h3>
+                        <ul>
+                            <li>Source Control via Git</li>
+                            <li>MVC Architecture</li>
+                            <li>Agile Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </accordion-group>
+        </accordion>
+    </div>
+</div>
